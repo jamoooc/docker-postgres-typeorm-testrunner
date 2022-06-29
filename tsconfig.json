@@ -1,0 +1,22 @@
+{
+  "compilerOptions": {
+    "lib": [
+      "ES2021"
+    ],
+    "target": "ES2021",
+    "module": "Node16",
+    "moduleResolution": "node",
+    "outDir": "./build",
+    "esModuleInterop": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "skipLibCheck": true,
+    "sourceMap": true
+    },
+  "include": [
+    "./src"
+  ],
+  "exclude": [
+    "./src/__tests__/**"
+  ]
+}

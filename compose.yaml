@@ -1,0 +1,11 @@
+services:
+  postgres:
+    image: postgres:latest
+    ports:
+      # host/container - use non-default port to avoid clashes with local PostgreSQL instances
+      - '5555:5432' 
+    environment:
+      POSTGRES_PASSWORD: docker
+    restart: unless-stopped # restart container unless explicitly stopped
+    volumes:
+      - ./src/__tests__/setup/init.sql:/docker-entrypoint-initdb.d/init.sql

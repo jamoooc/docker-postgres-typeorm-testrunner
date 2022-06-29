@@ -1,0 +1,16 @@
+# hidden files 
+
+.env
+.DS_Store
+
+# directories
+
+/build
+/TODO.md
+/node_modules
+/docker-*
+/coverage
+
+# logs
+
+yarn-error.log
